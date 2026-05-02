@@ -1,19 +1,16 @@
-import { logger } from '../utils/logger.js';
+client.on('ready', () => {
+    console.log(`Bot ${client.user.tag} tayyar hai!`);
 
-
-export const botConfig = {
-  // =========================
-  // BOT PRESENCE ("Live Stream")
-
-  // =========================
-  // - "online"    = green dot
-  // - "idle"      = yellow moon
-  // - "dnd"       = red do-not-disturb
-  // - "invisible" = appears offline
-  presence: {
-    // Current online state shown on Discord.
-    status: "dnd",
-
+    // Streaming status set karna
+    client.user.setPresence({
+        activities: [{
+            name: 'RG-PLAYS-ALL-ONE', // Jo status aap dikhana chahte hain
+            type: 1, // Type 1 ka matlab hai Streaming
+            url: 'https://www.twitch.tv/discord' // Valid Twitch link hona zaroori hai
+        }],
+        status: 'online', // Bot ka rang green rahega (purple icon ke saath)
+    });
+});
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
     // 0 = Playing
