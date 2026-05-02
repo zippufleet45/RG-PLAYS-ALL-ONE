@@ -1,11 +1,18 @@
-client.once('ready', () => {
-    console.log(`Ready! Logged in as ${client.user.tag}`);
+const { ActivityType } = require('discord.js');
 
-    // Direct Copy-Paste Streaming Status
-    client.user.setActivity('AyanGamerIN on Twitch', {
-        type: 1, // 1 ka matlab Streaming hota hai
-        url: 'https://www.twitch.tv/ayangamer2525'
+client.once('ready', () => {
+    console.log(`${client.user.tag} is online!`);
+
+    // Streaming Status Code
+    client.user.setPresence({
+        activities: [{ 
+            name: 'AyanGamerIN on YouTube', 
+            type: ActivityType.Streaming,
+            url: 'https://www.twitch.tv/ayangamer2525' // Twitch ya YouTube ka link zaroori hai
+        }],
+        status: 'online',
     });
+});
 
     console.log("Status successfully set to Streaming!");
 });
