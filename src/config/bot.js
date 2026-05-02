@@ -3,8 +3,8 @@ client.once('ready', () => {
     client.user.setActivity('streaming with AyanGamerIN', {
         type: ActivityType.Streaming,
         url: 'https://www.twitch.tv/ayangamer2525'
-
 });
+
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
     // 0 = Playing
