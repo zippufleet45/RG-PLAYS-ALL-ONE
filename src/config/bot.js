@@ -14,11 +14,6 @@ client.once('ready', () => {
         type: 3, // Watching
       }
     ];
-
-    console.log("Bot status and activities have been reset!");
-    });
-});
-
     console.log("Status successfully set to Streaming!");
 });
 
