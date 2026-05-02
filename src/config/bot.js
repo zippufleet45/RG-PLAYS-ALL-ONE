@@ -3,7 +3,7 @@ client.once('ready', () => {
     client.user.setActivity('streaming with AyanGamerIN', {
         type: ActivityType.Streaming,
         url: 'https://www.twitch.tv/ayangamer2525'
-    });
+
 });
 });
     // Activity lines shown under the bot name.
