@@ -1,16 +1,21 @@
-const { ActivityType } = require('discord.js');
-
 client.once('ready', () => {
-    console.log(`${client.user.tag} is online!`);
+    console.log(`Ready! Logged in as ${client.user.tag}`);
 
-    // Streaming Status Code
-    client.user.setPresence({
-        activities: [{ 
-            name: 'AyanGamerIN on YouTube', 
-            type: ActivityType.Streaming,
-            url: 'https://www.twitch.tv/ayangamer2525' // Twitch ya YouTube ka link zaroori hai
-        }],
-        status: 'online',
+    // 1. Streaming Status Set Karna
+    client.user.setActivity('streaming with AyanGamerIN', {
+        type: 1, // Streaming
+        url: 'https://www.twitch.tv/ayangamer2525'
+    });
+
+    // 2. Activities List (Reset to original style but with fixed syntax)
+    const activities = [
+      {
+        name: "/help",
+        type: 3, // Watching
+      }
+    ];
+
+    console.log("Bot status and activities have been reset!");
     });
 });
 
