@@ -1,8 +1,13 @@
 client.once('ready', () => {
     console.log(`Ready! Logged in as ${client.user.tag}`);
-    client.user.setActivity('streaming with AyanGamerIN', {
-        type: ActivityType.Streaming,
+
+    // Direct Copy-Paste Streaming Status
+    client.user.setActivity('AyanGamerIN on Twitch', {
+        type: 1, // 1 ka matlab Streaming hota hai
         url: 'https://www.twitch.tv/ayangamer2525'
+    });
+
+    console.log("Status successfully set to Streaming!");
 });
 
     // Activity lines shown under the bot name.
