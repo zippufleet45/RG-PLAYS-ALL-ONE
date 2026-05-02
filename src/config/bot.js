@@ -4,7 +4,7 @@ import { logger } from '../utils/logger.js';
 export const botConfig = {
   // =========================
   // BOT PRESENCE ("Live Stream")
-  )
+
   // =========================
   // - "online"    = green dot
   // - "idle"      = yellow moon
