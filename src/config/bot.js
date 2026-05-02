@@ -1,15 +1,10 @@
-client.on('ready', () => {
-    console.log(`Bot ${client.user.tag} tayyar hai!`);
-
-    // Streaming status set karna
-    client.user.setPresence({
-        activities: [{
-            name: 'RG-PLAYS-ALL-ONE', // Jo status aap dikhana chahte hain
-            type: 1, // Type 1 ka matlab hai Streaming
-            url: 'https://www.twitch.tv/discord' // Valid Twitch link hona zaroori hai
-        }],
-        status: 'online', // Bot ka rang green rahega (purple icon ke saath)
+client.once('ready', () => {
+    console.log(`Ready! Logged in as ${client.user.tag}`);
+    client.user.setActivity('streaming with AyanGamerIN', {
+        type: ActivityType.Streaming,
+        url: 'https://www.twitch.tv/ayangamer2525'
     });
+});
 });
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
