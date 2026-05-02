@@ -5,7 +5,6 @@ client.once('ready', () => {
         url: 'https://www.twitch.tv/ayangamer2525'
 
 });
-});
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
     // 0 = Playing
